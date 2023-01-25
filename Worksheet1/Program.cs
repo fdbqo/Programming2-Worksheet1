@@ -17,7 +17,6 @@ namespace Worksheet1
             Console.WriteLine("For Loop");
             PrintIntegersFor();
             
-
             Console.WriteLine("\n");
 
             Console.WriteLine("While Loop");
