@@ -14,23 +14,29 @@ namespace Worksheet1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("For Loop -----");
+            Console.WriteLine("----- For Loop ----------------");
             PrintIntegersFor();
             
             Console.WriteLine("\n");
 
-            Console.WriteLine("While Loop -----");
+            Console.WriteLine("----- While Loop --------------");
             PrintIntegersWhile();
 
             Console.WriteLine("\n");
 
-            Console.WriteLine("Do While Loop -----");
+            Console.WriteLine("----- Do While Loop -----------");
             PrintIntegersDo();
 
             Console.WriteLine("\n");
 
-            Console.WriteLine("Excluding 46 & 48 -----");
+            Console.WriteLine("----- Excluding 46 & 48 -------");
             PrintExcludingFor();
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine("----- Descending 60 => 40 -----");
+            PrintDescendingFor();
+
             // main method 
         }
 
@@ -93,5 +99,12 @@ namespace Worksheet1
             // method for printing nums excluding specifics 
         }
 
+        static void PrintDescendingFor()
+        {
+            for (int i = 60; i >= 40; i--)
+            {
+                Console.Write($"{i}, ");
+            }
+        }
     }
 }
