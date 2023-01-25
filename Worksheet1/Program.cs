@@ -14,14 +14,21 @@ namespace Worksheet1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("For Loop");
             PrintIntegersFor();
+            
 
-            Console.WriteLine();
+            Console.WriteLine("\n");
 
+            Console.WriteLine("While Loop");
             PrintIntegersWhile();
 
+            Console.WriteLine("\n");
 
+            Console.WriteLine("Do While Loop");
+            PrintIntegersDo();
 
+            // main method 
         }
 
         static void PrintIntegersFor()
@@ -31,6 +38,7 @@ namespace Worksheet1
                 Console.Write($"{i}, ");
             }
 
+            // method for printing 40 => 60 , for
         }
 
         static void PrintIntegersWhile()
@@ -42,6 +50,23 @@ namespace Worksheet1
                 Console.Write($"{i}, ");
                 i++;
             }
+
+            // method for printing 40 => 60 ,  while
         }
+
+        static void PrintIntegersDo()
+        {
+            int i = 40;
+
+            do
+            {
+                Console.Write($"{i}, ");
+                i++;
+
+            } while (i <= 60);
+
+            // method for printing 40 => 60 , do while
+        }
+
     }
 }
